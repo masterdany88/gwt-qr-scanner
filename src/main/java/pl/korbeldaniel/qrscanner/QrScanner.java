@@ -1,4 +1,4 @@
-package com.gwidgets.api.leaflet;
+package pl.korbeldaniel.qrscanner;
 
 import jsinterop.annotations.JsType;
 import elemental2.dom.Element;
