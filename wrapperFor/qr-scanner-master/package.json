@@ -1,0 +1,33 @@
+{
+  "name": "qr-scanner",
+  "version": "0.4.0",
+  "description": "A javascript QR scanner library",
+  "main": "qr-scanner.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nimiq/qr-scanner.git"
+  },
+  "keywords": [
+    "qr",
+    "scanner",
+    "reader",
+    "js",
+    "javascript",
+    "web"
+  ],
+  "author": "Nimiq",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nimiq/qr-scanner/issues"
+  },
+  "homepage": "https://github.com/nimiq/qr-scanner#readme",
+  "devDependencies": {
+    "google-closure-compiler": "^20171112.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sourcemaps": "^2.6.1"
+  }
+}

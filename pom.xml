@@ -1,0 +1,112 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>pl.korbeldaniel</groupId>
+	<artifactId>gwt-qr-scanner</artifactId>
+	<version>0.1.0</version>
+	<packaging>gwt-lib</packaging>
+
+	<properties>
+		<gwtVersion>2.8.2</gwtVersion>
+		<elementalVersion>1.0.0-RC1</elementalVersion>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+	</properties>
+
+	<developers>
+		<developer>
+			<name>korbel Daniel</name>
+			<id>masterdany88</id>
+			<email>masterdany88@gmail.com</email>
+			<organization>None</organization>
+		</developer>
+	</developers>
+
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+
+	<dependencies>
+     <dependency>
+      <groupId>com.google.gwt</groupId>
+      <artifactId>gwt-user</artifactId>
+      <version>${gwtVersion}</version>
+      <scope>provided</scope>
+    </dependency>
+     <dependency>
+       <groupId>com.google.gwt</groupId>
+        <artifactId>gwt-dev</artifactId>
+        <version>${gwtVersion}</version>
+      <scope>test</scope>
+        </dependency>
+        		<dependency>
+			<groupId>com.google.elemental2</groupId>
+			<artifactId>elemental2-core</artifactId>
+			<version>${elementalVersion}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.elemental2</groupId>
+			<artifactId>elemental2-dom</artifactId>
+			<version>${elementalVersion}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.elemental2</groupId>
+			<artifactId>elemental2-svg</artifactId>
+			<version>${elementalVersion}</version>
+	  </dependency>
+      <dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.12</version>
+		<scope>test</scope>
+	</dependency>
+	</dependencies>
+
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>net.ltgt.gwt.maven</groupId>
+				<artifactId>gwt-maven-plugin</artifactId>
+				<version>1.0-rc-6</version>
+				<extensions>true</extensions>
+				<configuration>
+					<moduleName>pl.korbeldaniel.gwt-qr-scanner</moduleName>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.0.1</version>
+			</plugin>
+		</plugins>
+	</build>
+	<name>gwt-qr-scanner</name>
+
+	<description>a JsInterop wrapper for the nimiq.qr-scanner js library</description>
+
+	<organization>
+		<name>None</name>
+	</organization>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+
+	<url>https://github.com/gwidgets/gwt-qr-scanner</url>
+</project>

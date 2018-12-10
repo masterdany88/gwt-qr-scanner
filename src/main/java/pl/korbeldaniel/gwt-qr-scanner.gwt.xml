@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='Qr-scanner'>
+  <inherits name='com.google.gwt.user.User' />
+  <inherits name='elemental2.dom.Dom' />
+  <inherits name='elemental2.core.Core' />
+  <inherits name='elemental2.svg.Svg' />
+
+  <source path='qrscanner' />
+
+</module>
