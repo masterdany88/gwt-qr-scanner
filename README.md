@@ -3,6 +3,14 @@ https://github.com/nimiq/qr-scanner
 
 H1. Usage
 
+Add library files to webapp directory on server side module:
+
+```
+server/src/main/webapp/js/qr-scanner.min.js
+server/src/main/webapp/js/qr-scanner.min.js.map
+server/src/main/webapp/js/qr-scanner-worker.min.js
+```
+
 Add those to main *.html file:
 
 ```
@@ -48,4 +56,6 @@ And then You can start stop:
 	scanner.start();
 	scanner.stop();
 ```
+
+There can be some files path issue that You will need to solve on Your own.
 
